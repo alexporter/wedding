@@ -186,23 +186,30 @@ html, body {
 .main-container .page .tab i::before {
     transform: translateX(-50%);
 }
+.main-container .page.one {
+    z-index: 2;
+}
 .main-container .page.one .tab {
     transform: translateX(-140%);
     border-width: 0 40px 50px 40px;
     z-index: 2;
 }
+.main-container .page.two {
+    z-index: 1;
+}
 .main-container .page.two .tab {
     border-width: 0 60px 70px 60px;
     top: -60px;
-    z-index: 1;
 }
 .main-container .page.two .tab i {
     top: 20px;
 }
+.main-container .page.three {
+    z-index: 2;
+}
 .main-container .page.three .tab {
     transform: translateX(40%);
     border-width: 0 40px 50px 40px;
-    z-index: 2;
 }
 .main-container .page .content {
     height: 100%;

@@ -6,7 +6,7 @@ $(document).ready(function() {
     $(window).load(function() {
         $('.main-container .page .tab').on('mouseover', function(e) {
             var page = $(e.target).parent('.page');
-            page.css({ top: ($('.main-container').outerHeight() - 60) + 'px', 'z-index': 100 });
+            page.css({ top: ($('.main-container').outerHeight() - 60) + 'px' });
         });
         $('.main-container .page .tab').on('mouseleave', function(e) {
             var page = $(e.target).parent('.page');
