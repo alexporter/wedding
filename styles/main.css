@@ -1,0 +1,105 @@
+/**
+ * COLORS
+ * Pink: #D30C35
+ * Orange: #FCB42E
+ * Yellow: #F0C505
+ * Teal: #5EC2A8
+ * Gray: #747474
+ */
+
+.pink {
+    color: #D30C35;
+}
+.orange {
+    color: #FCB42E;
+}
+.yellow {
+    color: #F0C505;
+}
+.teal {
+    color: #5EC2A8;
+}
+.gray {
+    color: #747474;
+}
+.background-pink {
+    background-color: #D30C35;
+}
+.background-orange {
+    background-color: #FCB42E;
+}
+.background-yellow {
+    background-color: #F0C505;
+}
+.background-teal {
+    background-color: #5EC2A8;
+}
+.background-gray {
+    background-color: #747474;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+    margin: 0px;
+    font-size: 16px;
+    color: #747474;
+}
+
+.loading-cover {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1.5s ease;
+/*display: none;*/
+}
+
+.loading-cover .dots {
+    display: flex;
+    flex: 1 1 auto;
+    font-size: 3rem;
+    padding-bottom: 42px;
+    overflow: hidden;
+}
+
+.loading-cover .dots.left {
+    justify-content: flex-end;
+}
+
+.loading-cover .dots.right {
+    
+}
+
+.loading-cover .dot {
+    background-color: #5EC2A8;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    flex: 0 0 auto;
+    margin: 0 3px;
+}
+
+.loading-cover .logo {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.loading-cover .logo img {
+    width: 400px;
+    max-width: 95%;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
