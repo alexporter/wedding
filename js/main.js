@@ -4,6 +4,15 @@ $(document).ready(function() {
     if(isIE())  $('body').addClass('is-ie');
     
     $(window).load(function() {
+        $('.main-container .page .tab').on('mouseover', function(e) {
+            var page = $(e.target).parent('.page');
+            page.css({ top: ($('.main-container').outerHeight() - 60) + 'px', 'z-index': 100 });
+        });
+        $('.main-container .page .tab').on('mouseleave', function(e) {
+            var page = $(e.target).parent('.page');
+            page.css({ top: '100%' });
+        });
+        
         setTimeout(function()   {
             $(this).attr('loaded', true);
             $('.loading-cover .logo').removeClass('fadeInUp').addClass('tada');

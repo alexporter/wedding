@@ -1,41 +1,75 @@
-/**
- * COLORS
- * Pink: #D30C35
- * Orange: #FCB42E
- * Yellow: #F0C505
- * Teal: #5EC2A8
- * Gray: #747474
- */
-
+/***GENERAL***/
 .pink {
-    color: #D30C35;
+    color: #D30C35 !important;
+}
+.light-pink {
+    color: #FF79A4 !important;
 }
 .orange {
-    color: #FCB42E;
+    color: #FCB42E !important;
 }
 .yellow {
-    color: #F0C505;
+    color: #F0C505 !important;
 }
 .teal {
-    color: #5EC2A8;
+    color: #5EC2A8 !important;
 }
 .gray {
-    color: #747474;
+    color: #747474 !important;
 }
 .background-pink {
-    background-color: #D30C35;
+    background-color: #D30C35 !important;
+}
+.background-light-pink {
+    background-color: #FF79A4 !important;
 }
 .background-orange {
-    background-color: #FCB42E;
+    background-color: #FCB42E !important;
 }
 .background-yellow {
-    background-color: #F0C505;
+    background-color: #F0C505 !important;
 }
 .background-teal {
-    background-color: #5EC2A8;
+    background-color: #5EC2A8 !important;
 }
 .background-gray {
-    background-color: #747474;
+    background-color: #747474 !important;
+}
+.border-pink {
+    border-color: #D30C35 !important;
+}
+.border-light-pink {
+    border-color: #FF79A4 !important;
+}
+.border-orange {
+    border-color: #FCB42E !important;
+}
+.border-yellow {
+    border-color: #F0C505 !important;
+}
+.border-teal {
+    border-color: #5EC2A8 !important;
+}
+.border-gray {
+    border-color: #747474 !important;
+}
+.border-bottom-pink {
+    border-bottom-color: #D30C35 !important;
+}
+.border-bottom-light-pink {
+    border-bottom-color: #FF79A4 !important;
+}
+.border-bottom-orange {
+    border-bottom-color: #FCB42E !important;
+}
+.border-bottom-yellow {
+    border-bottom-color: #F0C505 !important;
+}
+.border-bottom-teal {
+    border-bottom-color: #5EC2A8 !important;
+}
+.border-bottom-gray {
+    border-bottom-color: #747474 !important;
 }
 
 html, body {
@@ -46,8 +80,11 @@ html, body {
     margin: 0px;
     font-size: 16px;
     color: #747474;
+    overflow: hidden;
 }
 
+
+/***LOADING COVER***/
 .loading-cover {
     width: 100%;
     height: 100%;
@@ -59,6 +96,7 @@ html, body {
     top: 0;
     left: 0;
     transition: all 1.5s ease;
+    z-index: 100;
 /*display: none;*/
 }
 
@@ -69,15 +107,12 @@ html, body {
     padding-bottom: 42px;
     overflow: hidden;
 }
-
 .loading-cover .dots.left {
     justify-content: flex-end;
 }
-
 .loading-cover .dots.right {
     
 }
-
 .loading-cover .dot {
     background-color: #5EC2A8;
     border-radius: 50%;
@@ -97,9 +132,90 @@ html, body {
     max-width: 95%;
 }
 
+
+/***MAIN CONTAINER***/
 .main-container {
     width: 100%;
     height: 100%;
     background-image: url(../images/background.jpg);
     background-size: cover;
+    overflow: hidden;
+}
+
+.main-container .photos {
+    
+}
+.main-container .photo {
+    
+}
+
+.main-container .pages {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.main-container .page {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 1.5s ease;
+}
+.main-container .mountain,
+.main-container .page .tab {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: transparent;
+}
+.main-container .page .tab i {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.8em;
+    position: relative;
+    left: 50%;
+    top: 15px;
+}
+.main-container .page .tab i::before {
+    transform: translateX(-50%);
+}
+.main-container .page.one .tab {
+    transform: translateX(-140%);
+    border-width: 0 40px 50px 40px;
+    z-index: 2;
+}
+.main-container .page.two .tab {
+    border-width: 0 60px 70px 60px;
+    top: -60px;
+    z-index: 1;
+}
+.main-container .page.two .tab i {
+    top: 20px;
+}
+.main-container .page.three .tab {
+    transform: translateX(40%);
+    border-width: 0 40px 50px 40px;
+    z-index: 2;
+}
+.main-container .page .content {
+    height: 100%;
+}
+.main-container .mountain.one {
+    transform: translateX(-340%);
+    border-width: 0 20px 30px 20px;
+    top: -30px;
+    z-index: 3;
+}
+.main-container .mountain.two {
+    transform: translateX(240%);
+    border-width: 0 20px 30px 20px;
+    top: -30px;
+    z-index: 1;
 }
