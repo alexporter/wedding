@@ -1,75 +1,75 @@
 /***GENERAL***/
 .pink {
-    color: #D30C35 !important;
+    color: #ED3596 !important;
 }
 .light-pink {
-    color: #FF79A4 !important;
+    color: #F5A6C9 !important;
 }
 .orange {
-    color: #FCB42E !important;
+    color: #FAA929 !important;
 }
 .yellow {
-    color: #F0C505 !important;
+    color: #FFD52F !important;
 }
 .teal {
     color: #5EC2A8 !important;
 }
 .gray {
-    color: #747474 !important;
+    color: #454C4F !important;
 }
 .background-pink {
-    background-color: #D30C35 !important;
+    background-color: #ED3596 !important;
 }
 .background-light-pink {
-    background-color: #FF79A4 !important;
+    background-color: #F5A6C9 !important;
 }
 .background-orange {
-    background-color: #FCB42E !important;
+    background-color: #FAA929 !important;
 }
 .background-yellow {
-    background-color: #F0C505 !important;
+    background-color: #FFD52F !important;
 }
 .background-teal {
     background-color: #5EC2A8 !important;
 }
 .background-gray {
-    background-color: #747474 !important;
+    background-color: #454C4F !important;
 }
 .border-pink {
-    border-color: #D30C35 !important;
+    border-color: #ED3596 !important;
 }
 .border-light-pink {
-    border-color: #FF79A4 !important;
+    border-color: #F5A6C9 !important;
 }
 .border-orange {
-    border-color: #FCB42E !important;
+    border-color: #FAA929 !important;
 }
 .border-yellow {
-    border-color: #F0C505 !important;
+    border-color: #FFD52F !important;
 }
 .border-teal {
     border-color: #5EC2A8 !important;
 }
 .border-gray {
-    border-color: #747474 !important;
+    border-color: #454C4F !important;
 }
 .border-bottom-pink {
-    border-bottom-color: #D30C35 !important;
+    border-bottom-color: #ED3596 !important;
 }
 .border-bottom-light-pink {
-    border-bottom-color: #FF79A4 !important;
+    border-bottom-color: #F5A6C9 !important;
 }
 .border-bottom-orange {
-    border-bottom-color: #FCB42E !important;
+    border-bottom-color: #FAA929 !important;
 }
 .border-bottom-yellow {
-    border-bottom-color: #F0C505 !important;
+    border-bottom-color: #FFD52F !important;
 }
 .border-bottom-teal {
     border-bottom-color: #5EC2A8 !important;
 }
 .border-bottom-gray {
-    border-bottom-color: #747474 !important;
+    border-bottom-color: #454C4F !important;
 }
 
 html, body {
@@ -79,7 +79,7 @@ html, body {
     max-width: 100%;
     margin: 0px;
     font-size: 16px;
-    color: #747474;
+    color: #454C4F;
     overflow: hidden;
 }
 
@@ -104,7 +104,6 @@ html, body {
     display: flex;
     flex: 1 1 auto;
     font-size: 3rem;
-    padding-bottom: 42px;
     overflow: hidden;
 }
 .loading-cover .dots.left {
@@ -163,6 +162,9 @@ html, body {
     height: 100%;
     transition: all 1.5s ease;
 }
+.main-container .page.active {
+    top: 0% !important;
+}
 .main-container .mountain,
 .main-container .page .tab {
     position: absolute;
@@ -178,12 +180,10 @@ html, body {
 }
 .main-container .page .tab i {
     color: rgba(255, 255, 255, 0.75);
-    font-size: 1.8em;
+    font-size: 1.2em;
     position: relative;
     left: 50%;
-    top: 15px;
-}
-.main-container .page .tab i::before {
+    top: 22px;
     transform: translateX(-50%);
 }
 .main-container .page.one {
@@ -202,7 +202,7 @@ html, body {
     top: -60px;
 }
 .main-container .page.two .tab i {
-    top: 20px;
+    top: 28px;
 }
 .main-container .page.three {
     z-index: 2;
@@ -213,6 +213,13 @@ html, body {
 }
 .main-container .page .content {
     height: 100%;
+    padding: 10px 15px;
+}
+.main-container .page .content .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
 }
 .main-container .mountain.one {
     transform: translateX(-340%);

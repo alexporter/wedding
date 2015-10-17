@@ -5,12 +5,21 @@ $(document).ready(function() {
     
     $(window).load(function() {
         $('.main-container .page .tab').on('mouseover', function(e) {
-            var page = $(e.target).parent('.page');
+            if ($('.page[preview]').length) return;
+            
+            var page = $(e.target).parents('.page');
             page.css({ top: ($('.main-container').outerHeight() - 60) + 'px' });
+            page.attr('preview', 1);
+            setTimeout(function() {
+                if (!page.attr('preview')) return;
+                page.css({ top: '100%' });
+                page.removeAttr('preview');
+            }, 3000);
         });
-        $('.main-container .page .tab').on('mouseleave', function(e) {
-            var page = $(e.target).parent('.page');
-            page.css({ top: '100%' });
+        $('.main-container .page .tab').on('click', function(e) {
+            closePreviews();
+            closePages();
+            $(e.target).parents('.page').addClass('active');
         });
         
         setTimeout(function()   {
@@ -43,4 +52,12 @@ function addDots(n, max) {
         $('.dots.right').html($('.dots.right').html() + '<div class="dot"></div>');
         addDots(n + 1, max);
     }, 10);
+}
+
+function closePreviews() {
+    $('.page[preview]').removeAttr('preview');
+}
+
+function closePages() {
+    $('.page.active').removeClass('active');
 }
