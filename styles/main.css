@@ -97,7 +97,7 @@ html, body {
     left: 0;
     transition: all 1.5s ease;
     z-index: 100;
-/*display: none;*/
+display: none;
 }
 
 .loading-cover .dots {
@@ -220,6 +220,21 @@ html, body {
     font-weight: bold;
     color: rgba(255, 255, 255, 0.75);
     text-transform: uppercase;
+}
+.main-container .page .content .close-btn {
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.75);
+}
+.main-container .page.active .content .close-btn {
+    display: block;
+}
+
+.main-container .page .content .close-btn {
+    font-size: 1.5em;
 }
 .main-container .mountain.one {
     transform: translateX(-340%);

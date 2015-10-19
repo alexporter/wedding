@@ -4,10 +4,18 @@ $(document).ready(function() {
     if(isIE())  $('body').addClass('is-ie');
     
     $(window).load(function() {
+        $('body').on('click', function(e) {
+            var t = $(e.target);
+            if (!t.hasClass('.tab') && !t.parents('.tab').length) {
+                $('.page[preview]').css({ top: '100%' });
+                closePreviews();
+            }
+        });
         $('.main-container .page .tab').on('mouseover', function(e) {
             if ($('.page[preview]').length) return;
             
             var page = $(e.target).parents('.page');
+            if (page.attr('remove-active')) return;
             page.css({ top: ($('.main-container').outerHeight() - 60) + 'px' });
             page.attr('preview', 1);
             setTimeout(function() {
@@ -17,9 +25,12 @@ $(document).ready(function() {
             }, 3000);
         });
         $('.main-container .page .tab').on('click', function(e) {
+            var page = $(e.target).parents('.page');
+            page.removeAttr('preview');
+            $('.page[preview]').css({ top: '100%' });
             closePreviews();
             closePages();
-            $(e.target).parents('.page').addClass('active');
+            page.addClass('active');
         });
         
         setTimeout(function()   {
@@ -59,5 +70,15 @@ function closePreviews() {
 }
 
 function closePages() {
-    $('.page.active').removeClass('active');
+    var activePages = $('.page.active');
+    activePages.each(function(i, p) {
+        $(p).attr('remove-active', 1);
+    });
+    activePages.css({ top: '100%' });
+    activePages.removeClass('active');
+    setTimeout(function() {
+        activePages.each(function(i, p) {
+            $(p).removeAttr('remove-active');
+        });
+    }, 1500);
 }
