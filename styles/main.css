@@ -97,7 +97,7 @@ html, body {
     left: 0;
     transition: all 1.5s ease;
     z-index: 100;
-display: none;
+/*display: none;*/
 }
 
 .loading-cover .dots {
