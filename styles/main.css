@@ -142,10 +142,45 @@ display: none;
 }
 
 .main-container .photos {
-    
+    width: 100%;
+    height: 100%;
 }
 .main-container .photo {
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    max-width: 18%;
+    border: 15px solid #F3F3F3;
+    box-shadow: #6F6F6F 0px 0px 7px 0px;
+    cursor: pointer;
+}
+.main-container .photo.one {
+    left: 20%;
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(-6deg);
+}
+.main-container .photo.two {
+    left: 35%;
+    z-index: 5;
+    transform: translate(-50%, -50%) rotate(1deg);
+}
+.main-container .photo.three {
+    z-index: 4;
+    transform: translate(-50%, -50%) rotate(-2deg);
+}
+.main-container .photo.four {
+    left: 65%;
+    z-index: 2;
+    transform: translate(-50%, -50%) rotate(6deg);
+}
+.main-container .photo.five {
+    left: 80%;
+    z-index: 3;
+    transform: translate(-50%, -50%) rotate(-1deg);
+}
+.main-container .photo img {
+    width: 100%;
 }
 
 .main-container .pages {
@@ -187,15 +222,15 @@ display: none;
     transform: translateX(-50%);
 }
 .main-container .page.one {
-    z-index: 2;
+    z-index: 12;
 }
 .main-container .page.one .tab {
     transform: translateX(-140%);
     border-width: 0 40px 50px 40px;
-    z-index: 2;
+    z-index: 12;
 }
 .main-container .page.two {
-    z-index: 1;
+    z-index: 11;
 }
 .main-container .page.two .tab {
     border-width: 0 60px 70px 60px;
@@ -205,7 +240,7 @@ display: none;
     top: 28px;
 }
 .main-container .page.three {
-    z-index: 2;
+    z-index: 12;
 }
 .main-container .page.three .tab {
     transform: translateX(40%);
