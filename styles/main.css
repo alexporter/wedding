@@ -124,6 +124,7 @@ html, body {
 .loading-cover .logo {
     flex: 0 0 auto;
     text-align: center;
+    display: none;
 }
 
 .loading-cover .logo img {

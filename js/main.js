@@ -33,18 +33,21 @@ $(document).ready(function() {
             page.addClass('active');
         });
         
-        setTimeout(function()   {
+        setTimeout(function() {
             $(this).attr('loaded', true);
-            $('.loading-cover .logo').removeClass('fadeInUp').addClass('tada');
-        }, 1000);
+            $('.loading-cover .logo').css({ display: 'block' }).addClass('fadeInUp');
+            setTimeout(function() {
+                $('.loading-cover .logo').removeClass('fadeInUp').addClass('tada');
+            }, 1000);
+        }, 500);
         
-        setTimeout(function()   {
+        setTimeout(function() {
             var numDots = Math.ceil($('.dots.left').outerWidth()/10); // Should be same for left or right
             addDots(0, numDots);
             setTimeout(function() {
                 $('.loading-cover').css({ top: '-100%' });
             }, (numDots * 10) + 1000);
-        }, 1200);
+        }, 1700);
     });
 });
 
