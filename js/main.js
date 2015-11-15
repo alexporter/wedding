@@ -103,3 +103,7 @@ function closePages() {
         });
     }, 1500);
 }
+
+function goToPage(url) {
+    window.open(url);
+}
