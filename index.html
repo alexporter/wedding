@@ -13,7 +13,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/demo.css">
+        <link rel="stylesheet" href="styles/style6.css">
         <link rel="stylesheet" href="styles/main.css">
+        <script src="js/modernizr-custom.js"></script>
     </head>
     <body>
         <div class="loading-cover">
@@ -22,12 +26,57 @@
             <div class="dots right"></div>
         </div>
         <div class="main-container">
-            <div class="photos">
-                <div class="photo one"><img src="images/alex_lindsay_1.jpg" /></div>
-                <div class="photo two"><img src="images/alex_lindsay_2.jpg" /></div>
-                <div class="photo three"><img src="images/alex_lindsay_3.jpg" /></div>
-                <div class="photo four"><img src="images/alex_lindsay_4.jpg" /></div>
-                <div class="photo five"><img src="images/alex_lindsay_5.jpg" /></div>
+            <div class="top-icons">
+                <div class="top-icon photos" data-tooltip="Engagement Photos" onclick="showTopPage('one')">
+                    <i class="fa fa-camera-retro"></i>
+                </div>
+                <div class="top-icon rsvp" data-tooltip="RSVP - Coming Soon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="top-icon registry right-screen" data-tooltip="Registry">
+                    <i class="fa fa-gift"></i>
+                </div>
+            </div>
+            <div class="top-page one">
+                <div class="close-btn" onclick="closeTopPages()"><i class="fa fa-close"></i></div>
+                <div class="content">
+        			<div class="grid">
+                        <div class="grid__item" data-size="1920x2880">
+                            <a href="images/engagement/6.jpg" class="img-wrap"><img src="images/engagement/6.jpg" alt="Lookout Mountain" />
+                                <div class="description description--grid">Boulder</div>
+                            </a>
+                        </div>
+        				<div class="grid__item" data-size="2880x1921">
+        					<a href="images/engagement/4.jpg" class="img-wrap"><img src="images/engagement/4.jpg" alt="Red Rocks" />
+        						<div class="description description--grid">Red Rocks</div>
+        					</a>
+        				</div>
+        				<div class="grid__item" data-size="2880x1921">
+        					<a href="images/engagement/5.jpg" class="img-wrap"><img src="images/engagement/5.jpg" alt="Lookout Mountain" />
+        						<div class="description description--grid">Lookout Mountain</div>
+        					</a>
+        				</div>
+        				<div class="grid__item" data-size="1920x2880">
+        					<a href="images/engagement/7.jpg" class="img-wrap"><img src="images/engagement/7.jpg" alt="Lookout Mountain" />
+        						<div class="description description--grid">Boulder</div>
+        					</a>
+        				</div>
+        				<div class="grid__item" data-size="2880x1921">
+        					<a href="images/engagement/1.jpg" class="img-wrap"><img src="images/engagement/1.jpg" alt="Lookout Mountain" />
+        						<div class="description description--grid">Lookout Mountain</div>
+        					</a>
+        				</div>
+        				<div class="grid__item" data-size="2880x1921">
+        					<a href="images/engagement/2.jpg" class="img-wrap"><img src="images/engagement/2.jpg" alt="Boulder" />
+        						<div class="description description--grid">Boulder</div>
+        					</a>
+        				</div>
+        			</div>
+        			<div class="preview">
+        				<button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+        				<div class="description description--preview"></div>
+        			</div>
+        		</div>
             </div>
             <div class="pages">
                 <div class="page"><div class="mountain one border-bottom-yellow"></div></div></div>
@@ -38,6 +87,7 @@
                     <div class="content background-pink">
                         <span class="title">Events</span>
                         <div class="close-btn" onclick="closePages()"><i class="fa fa-close"></i></div>
+                        <p class="text">Coming Soon</p>
                     </div>
                 </div>
                 <div class="page two">
@@ -46,6 +96,20 @@
                     </div>
                     <div class="content background-teal">
                         <span class="title">Our Story</span>
+                        <div class="our-app">
+                            <p class="text">On December 17th, 2014, Alex had a wonderful surprise planned. December 17th also happened to be the day of Lindsay's final review for her architecture studio. It is well known within the architecture student community that this day culminates in numerous alcoholic beverages. The morning of the 17th Alex texted Lindsay asking her to not make any plans for the evening. He tried to play it cool by stating that we would be going to holiday parties and seeing everyone a lot in the next few days, and that the evening should just be the two of them. Lindsay responded informing him that plans for this particular evening had been made back in August and thought nothing of it.
+
+<br/><br/>After surviving the day of presentations, Lindsay and a group of architecture friends headed to The Oread for a much needed round of Tank 7s. Around the time Alex would be getting off work, Lindsay sent him a text message requesting a ride. He responded with a questionable text saying that he couldn't pick her up but she needed to come home. Somewhat unsure of what the message might mean, Lindsay showed the text to her younger sister Allison. Allison took one look at the text and exclaimed, “OH MY GOD HE IS GOING TO PROPOSE.” Lindsay had been thinking those exact words, and immediately started downing water to sober up as quickly as possible.
+
+<br/><br/>Continuing with the aloof texts, Alex told Lindsay that the car was outside and that she should meet him at home. She went outside and found his car with the keys on the front tire and made her way to their house. Of course he wasn’t there when she arrived. Convinced that a proposal was imminent, she took a minute to redo her makeup. It was during this time that she checked her phone and Alex had sent her a link to a website. This is where the true fun began. The link led to a scavenger hunt web application that Alex had designed and built himself! It was composed of cyrptic clues that related to different memories and places around Lawrence during their time spent there together. Lindsay started answering the questions and soon began her adventure around the city. At one point this adventure took an unexpected turn...Lindsay's phone died. Fortunately she had a charger in the car and just had to postpone the scavenger hunt for a bit. Meanwhile, Alex was patiently waiting at the final location...in the dark...in December...in the middle of a local park. After a few text messages back and forth, Lindsay solved the final clue and made her way to the park where Alex was waiting.
+
+<br/><br/>At the park, there is a path that cuts diagonally through the area which is lined on both sides with low intertwined trees. On this night the trees were wrapped in white Christmas lights. At the end of this magical tunnel, Alex was smiling and waiting. Lindsay made it to the end, and he popped the question! Lindsay (obviously) said yes and it began to snow!
+
+<br/><br/>You can play around with the proposal application Alex built below (answers are the same as the clue number...Clue 1's answer is "1")!
+                            </p>
+                            <img src="images/phone.png" />
+                            <iframe src="http://alexporter.github.io/Question/" height="556" width="301" allowfullscreen="" frameborder="0"></iframe>
+                        </div>
                         <div class="close-btn" onclick="closePages()"><i class="fa fa-close"></i></div>
                     </div>
                 </div>
@@ -55,13 +119,154 @@
                     </div>
                     <div class="content background-orange">
                         <span class="title">Wedding Party</span>
+                        <div class="wedding-party-list">
+                            <div class="row">
+                                <div class="allison col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Allison Pericich</span>
+                                    <span class="member-desc">Maid of Honor</span>
+                                </div>
+                                <div class="ariel col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Ariel Piesen Burow</span>
+                                    <span class="member-desc">Bridesmaid</span>
+                                </div>
+                                <div class="becca col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Becca Myers</span>
+                                    <span class="member-desc">Bridesmaid</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="blaise col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Blaise Cannon</span>
+                                    <span class="member-desc">Officiant</span>
+                                </div>
+                                <div class="brian col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Brian Grewing</span>
+                                    <span class="member-desc">Groomsman</span>
+                                </div>
+                                <div class="cammie col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Cammie Lewis Holiday</span>
+                                    <span class="member-desc">Bridesmaid</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="stophie col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Christopher Porter</span>
+                                    <span class="member-desc">Groomsman</span>
+                                </div>
+                                <div class="daniel col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Daniel Pericich</span>
+                                    <span class="member-desc">Groomsman</span>
+                                </div>
+                                <div class="dylan col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Dylan Porter</span>
+                                    <span class="member-desc">Groomsman</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="lauren col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Lauren Hughes</span>
+                                    <span class="member-desc">Bridesmaid</span>
+                                </div>
+                                <div class="markc col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Mark Cunningham</span>
+                                    <span class="member-desc">Musician</span>
+                                </div>
+                                <div class="matt col-md-4">
+                                    <span class="member-photo"></span>
+                                    <span class="member-name">Matthew Catron</span>
+                                    <span class="member-desc">Groomsman</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="close-btn" onclick="closePages()"><i class="fa fa-close"></i></div>
                     </div>
                 </div>
-                <div class="page"><div class="mountain two border-bottom-light-pink"></div></div>
+                <div class="page"><div class="mountain two border-bottom-light-pink"></div>
+            </div>
+            <div class="mask">
+                <div class="close-btn" onclick="closePhotoZoom()"><i class="fa fa-close"></i></div>
             </div>
         </div>
-        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-        <script src='js/main.js'></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+    	<script src="js/masonry.pkgd.min.js"></script>
+    	<script src="js/classie.js"></script>
+    	<script src="js/grid-main.js"></script>
+        <script>
+    		(function() {
+    			var support = { transitions: Modernizr.csstransitions },
+    				// transition end event name
+    				transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+    				transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+    				onEndTransition = function( el, callback ) {
+    					var onEndCallbackFn = function( ev ) {
+    						if( support.transitions ) {
+    							if( ev.target != this ) return;
+    							this.removeEventListener( transEndEventName, onEndCallbackFn );
+    						}
+    						if( callback && typeof callback === 'function' ) { callback.call(this); }
+    					};
+    					if( support.transitions ) {
+    						el.addEventListener( transEndEventName, onEndCallbackFn );
+    					}
+    					else {
+    						onEndCallbackFn();
+    					}
+    				};
+
+    			new GridFx(document.querySelector('.grid'), {
+    				imgPosition : {
+    					x : 1,
+    					y : -0.75
+    				},
+    				pagemargin : 50,
+    				onOpenItem : function(instance, item) {
+    					var win = {width: window.innerWidth, height: window.innerHeight};
+    					instance.items.forEach(function(el) {
+    						if(item != el) {
+    							var delay = Math.floor(Math.random() * 150);
+    								el.style.WebkitTransition = 'opacity .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1), -webkit-transform .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
+    								el.style.transition = 'opacity .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1), transform .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
+
+    								el.style.WebkitTransform = 'translate3d(-' + win.width + 'px,0,0)';
+    								el.style.transform = 'translate3d(-' + win.width + 'px,0,0)';
+    								el.style.opacity = 0;
+    						}
+    					});
+    				},
+    				onCloseItem : function(instance, item) {
+    					instance.items.forEach(function(el) {
+    						if(item != el) {
+    							var delay = Math.floor(Math.random() * 150);
+    							el.style.WebkitTransition = 'opacity .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1), -webkit-transform .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
+    							el.style.transition = 'opacity .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1), transform .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
+
+
+    							el.style.WebkitTransform = 'translate3d(0,0,0)';
+    							el.style.transform = 'translate3d(0,0,0)';
+    							el.style.opacity = 1;
+
+    							onEndTransition(el, function() {
+    								el.style.transition = 'none';
+    								el.style.WebkitTransform = 'none';
+    							});
+    						}
+    					});
+    				}
+    			});
+    		})();
+    	</script>
     </body>
 </html>
