@@ -84,7 +84,7 @@ html, body {
 }
 
 .text {
-    margin: 20px 30px 30px 30px;
+    margin: 40px 50px;
     font-size: 14px;
     font-weight: 500;
 }
@@ -131,11 +131,12 @@ html, body {
     flex: 0 0 auto;
     text-align: center;
     display: none;
+    max-width: 100%;
 }
 
 .loading-cover .logo img {
     width: 400px;
-    max-width: 95%;
+    max-width: 90%;
 }
 
 
@@ -146,6 +147,11 @@ html, body {
     background-image: url(../images/background.jpg);
     background-size: cover;
     overflow-x: hidden;
+}
+@media only screen and (max-width: 1500px) {
+    .main-container {
+        background: url(../images/background.jpg) no-repeat center center fixed;
+    }
 }
 
 .top-icons {
@@ -352,6 +358,7 @@ html, body {
 }
 .our-app img {
     position: absolute;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
     width: 348px;
@@ -362,7 +369,7 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    margin-top: 60px;
+    margin-top: 100px;
     border: none;
 }
 
@@ -411,6 +418,9 @@ html, body {
     background-size: 170px 170px;
     background-position: -6px -5px;
 }
+.blaise .member-photo {
+    background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7WKL7lukUbYZvxmQN3WLgggPOi57uAjR3Xn4ANpt8EZJeGdCO);
+}
 .brian .member-photo {
     background-image: url(../images/brian.jpg);
     background-position-x: -27px;
@@ -435,6 +445,10 @@ html, body {
     background-position-x: -40px;
 }
 
+.top-page .content {
+    height: 100%;
+    overflow: auto;
+}
 .grid__item .description {
     display: none;
 }
