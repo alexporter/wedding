@@ -49,7 +49,7 @@ $(document).ready(function() {
             }, (numDots * 10) + 1000);
         }, 1700);
         
-        var deadline = new Date(2016, 6, 4);
+        var deadline = new Date(2016, 5, 4);
         initializeClock('countdown', deadline);
     });
 });
