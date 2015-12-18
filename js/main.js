@@ -48,7 +48,7 @@ $(document).ready(function() {
                 $('.loading-cover').css({ top: '-100%' });
             }, (numDots * 10) + 1000);
         }, 1700);
-        
+
         var deadline = new Date(2016, 5, 4);
         initializeClock('countdown', deadline);
     });
@@ -73,6 +73,7 @@ function addDots(n, max) {
 
 function showTopPage(page) {
     $('.top-icons').css({ top: '-100px' });
+    $('#countdown').css({ top: '-100px' });
     $('.page .tab').css({ top: '0' });
     $('.page .mountain').css({ top: '0' });
     $('.top-page.' + page).addClass('active');
@@ -83,6 +84,7 @@ function closeTopPages() {
     activePages.removeClass('active');
     setTimeout(function() {
         $('.top-icons').css({ top: '10px' });
+        $('#countdown').css({ top: '-3px' });
         $('.page .mountain').css({ top: '-30px' });
         $('.page.one .tab,.page.three .tab').css({ top: '-50px' });
         $('.page.two .tab').css({ top: '-60px' });
