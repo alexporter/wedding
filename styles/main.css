@@ -79,8 +79,15 @@ html, body {
     max-width: 100%;
     margin: 0;
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.75);;
+    color: rgba(255, 255, 255, 0.75);
     overflow: hidden;
+}
+a {
+    color: rgba(255, 255, 255, 0.75);
+}
+a:hover,
+a:active {
+    text-decoration: none;
 }
 
 .text {
@@ -538,4 +545,39 @@ html, body {
 #countdown .smalltext {
     font-size: 16px;
     font-weight: 500;
+}
+
+.info-group {
+    display: table;
+    width: 700px;
+    max-width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+}
+.berg {
+    max-width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.berg img {
+    width: 100%;
+}
+.col-md-6 {
+    padding-top: 10px;
+}
+@media screen and (max-width: 991px) {
+    .info-group {
+        width: 343px;
+    }
+    .col-md-6 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 332px) {
+    h2 {
+        font-size: 1.4rem;
+    }
 }
