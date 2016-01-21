@@ -451,6 +451,10 @@ a:active {
     background-image: url(../images/matt.jpg);
     background-position-x: -40px;
 }
+.rachel .member-photo {
+    background-image: url(../images/rachel.jpg);
+    background-position-y: -35px;
+}
 
 .top-page .content {
     height: 100%;
