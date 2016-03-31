@@ -50,8 +50,7 @@ $(document).ready(function() {
         }, 500);
 
         setTimeout(function() {
-            var divideBy = $('body').width() < 600 ? 6 : 10,
-                numDots = Math.ceil($('.dots.left').outerWidth()/divideBy); // Should be same for left or right
+            var numDots = Math.ceil($('.dots.left').outerWidth()/10); // Should be same for left or right
             addDots(0, numDots);
             setTimeout(function() {
                 $('.loading-cover').css({ top: '-100%' });

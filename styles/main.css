@@ -139,7 +139,7 @@ a:active {
     text-align: center;
     display: none;
     width: 400px;
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .loading-cover .logo img {
@@ -155,10 +155,12 @@ a:active {
     background-size: cover;
     overflow-x: hidden;
     overflow-y: hidden;
+    position: relative;
 }
 @media only screen and (max-width: 1500px) {
     .main-container {
         background: url(../images/background.jpg) no-repeat center center fixed;
+        background-size: cover;
     }
 }
 
@@ -299,9 +301,11 @@ a:active {
 }
 .main-container .page .content {
     height: 100%;
+    position: relative;
     padding-top: 10px;
     padding-bottom: 60px;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .main-container .page .content .title {
     font-size: 2rem;
@@ -591,9 +595,7 @@ a:active {
 }
 @media screen and (max-width: 600px) {
     .loading-cover .dot {
-        width: 2px;
-        height: 2px;
-        margin: 0 2px;
+        display: none;
     }
 
     #countdown {
