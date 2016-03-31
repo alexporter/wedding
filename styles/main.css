@@ -138,12 +138,12 @@ a:active {
     flex: 0 0 auto;
     text-align: center;
     display: none;
-    max-width: 100%;
+    width: 400px;
+    max-width: 50%;
 }
 
 .loading-cover .logo img {
-    width: 400px;
-    max-width: 90%;
+    width: 90%;
 }
 
 
@@ -154,6 +154,7 @@ a:active {
     background-image: url(../images/background.jpg);
     background-size: cover;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 @media only screen and (max-width: 1500px) {
     .main-container {
@@ -240,7 +241,7 @@ a:active {
     top: 100%;
     width: 100%;
     height: 100%;
-    transition: all 1.5s ease;
+    transition: all 0.8s ease;
 }
 .main-container .top-page {
     top: -100%;
@@ -568,12 +569,16 @@ a:active {
 .berg img {
     width: 100%;
 }
+.info-group img {
+    padding-bottom: 10px;
+}
 .col-md-6 {
     padding-top: 10px;
 }
 .note {
     font-size: 0.7rem;
     padding-top: 3px;
+    padding-bottom: 10px;
 }
 @media screen and (max-width: 991px) {
     .info-group {
@@ -582,6 +587,29 @@ a:active {
     .col-md-6 {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .loading-cover .dot {
+        width: 2px;
+        height: 2px;
+        margin: 0 2px;
+    }
+
+    #countdown {
+        display: none;
+    }
+
+    .top-icons {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+@media screen and (max-width: 375px) {
+    .main-container .page .content .title {
+        display: inline-block;
+        font-size: 1.4rem;
+        margin-top: 10px;
     }
 }
 @media screen and (max-width: 332px) {

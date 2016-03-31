@@ -22,7 +22,7 @@ $(document).ready(function() {
                 if (!page.attr('preview')) return;
                 page.css({ top: '100%' });
                 page.removeAttr('preview');
-            }, 3000);
+            }, 1500);
         });
         $('.main-container .page .tab').on('click', function(e) {
             var page = $(e.target).parents('.page');
@@ -50,7 +50,8 @@ $(document).ready(function() {
         }, 500);
 
         setTimeout(function() {
-            var numDots = Math.ceil($('.dots.left').outerWidth()/10); // Should be same for left or right
+            var divideBy = $('body').width() < 600 ? 6 : 10,
+                numDots = Math.ceil($('.dots.left').outerWidth()/divideBy); // Should be same for left or right
             addDots(0, numDots);
             setTimeout(function() {
                 $('.loading-cover').css({ top: '-100%' });
