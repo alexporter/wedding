@@ -247,7 +247,9 @@ a:active {
 }
 .main-container .top-page {
     top: -100%;
-    padding-top: 60px;
+}
+.main-container .top-page .grid {
+    margin-top: 60px;
 }
 .main-container .top-page.active,
 .main-container .page.active {
