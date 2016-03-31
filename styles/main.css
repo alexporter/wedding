@@ -464,6 +464,7 @@ a:active {
 .top-page .content {
     height: 100%;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .grid__item .description {
     display: none;
