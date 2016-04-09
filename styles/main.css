@@ -172,8 +172,8 @@ a:active {
     transition: all 0.5s ease;
 }
 .top-icon {
-    width: 53px;
-    height: 53px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     position: relative;
     cursor: pointer;
