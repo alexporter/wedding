@@ -488,7 +488,7 @@ a:active {
 }
 [data-tooltip]:before {
     position: absolute;
-    top: 51px;
+    top: 105%;
     left: 50%;
     margin-bottom: 5px;
     margin-left: -80px;
@@ -510,7 +510,7 @@ a:active {
 }
 [data-tooltip]:after {
     position: absolute;
-    top: 46px;
+    top: 100%;
     left: 50%;
     margin-left: -5px;
     width: 0;
